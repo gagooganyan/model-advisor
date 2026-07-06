@@ -1,0 +1,29 @@
+{
+  "updated_at": "2026-07-06T00:00:00Z",
+  "top_models": [
+    {"id": "anthropic/claude-fable-5", "coding_index": 76.5, "intelligence_index": 59.9, "agentic_index": 52.8, "code_elo": 1349, "total_score": 189.2, "context_k": 976, "modality": "text+image+file->text", "prompt_price_per_m": 10.0, "completion_price_per_m": 50.0},
+    {"id": "anthropic/claude-opus-4.8", "coding_index": 74.3, "intelligence_index": 55.7, "agentic_index": 47.2, "code_elo": 1282, "total_score": 177.2, "context_k": 976, "modality": "text+image+file->text", "prompt_price_per_m": 5.0, "completion_price_per_m": 25.0},
+    {"id": "openai/gpt-5.5", "coding_index": 74.9, "intelligence_index": 54.8, "agentic_index": 44.9, "code_elo": 1296, "total_score": 174.6, "context_k": 1025, "modality": "text+image+file->text", "prompt_price_per_m": 5.0, "completion_price_per_m": 30.0},
+    {"id": "anthropic/claude-sonnet-5", "coding_index": 71.5, "intelligence_index": 53.4, "agentic_index": 46.7, "code_elo": 1324, "total_score": 171.6, "context_k": 976, "modality": "text+image+file->text", "prompt_price_per_m": 2.0, "completion_price_per_m": 10.0},
+    {"id": "anthropic/claude-opus-4.7", "coding_index": 73.6, "intelligence_index": 53.5, "agentic_index": 44.4, "code_elo": 1336, "total_score": 171.5, "context_k": 976, "modality": "text+image+file->text", "prompt_price_per_m": 5.0, "completion_price_per_m": 25.0},
+    {"id": "openai/gpt-5.4", "coding_index": 71.1, "intelligence_index": 51.4, "agentic_index": 41.1, "code_elo": 1262, "total_score": 163.6, "context_k": 1025, "modality": "text+image+file->text", "prompt_price_per_m": 2.5, "completion_price_per_m": 15.0},
+    {"id": "z-ai/glm-5.2", "coding_index": 68.8, "intelligence_index": 51.1, "agentic_index": 43.1, "code_elo": 1360, "total_score": 163.0, "context_k": 1024, "modality": "text->text", "prompt_price_per_m": 0.56, "completion_price_per_m": 1.76},
+    {"id": "google/gemini-3.5-flash", "coding_index": 70.1, "intelligence_index": 50.2, "agentic_index": 37.4, "code_elo": 1306, "total_score": 157.7, "context_k": 1024, "modality": "text+image+file+audio+video->text", "prompt_price_per_m": 1.5, "completion_price_per_m": 9.0},
+    {"id": "anthropic/claude-sonnet-4.6", "coding_index": 63.0, "intelligence_index": 47.2, "agentic_index": 40.8, "code_elo": 1326, "total_score": 151.0, "context_k": 976, "modality": "text+image+file->text", "prompt_price_per_m": 3.0, "completion_price_per_m": 15.0},
+    {"id": "qwen/qwen3.7-max", "coding_index": 66.0, "intelligence_index": 46.0, "agentic_index": 30.6, "code_elo": 1311, "total_score": 142.6, "context_k": 976, "modality": "text->text", "prompt_price_per_m": 1.25, "completion_price_per_m": 3.75},
+    {"id": "deepseek/deepseek-v4-pro", "coding_index": 59.4, "intelligence_index": 44.3, "agentic_index": 36.4, "code_elo": 1287, "total_score": 140.1, "context_k": 1024, "modality": "text->text", "prompt_price_per_m": 0.43, "completion_price_per_m": 0.87},
+    {"id": "minimax/minimax-m3", "coding_index": 58.6, "intelligence_index": 44.4, "agentic_index": 35.4, "code_elo": 1306, "total_score": 138.4, "context_k": 1024, "modality": "text+image+video->text", "prompt_price_per_m": 0.3, "completion_price_per_m": 1.2},
+    {"id": "google/gemini-3.1-pro-preview", "coding_index": 68.8, "intelligence_index": 46.5, "agentic_index": 21.4, "code_elo": 1290, "total_score": 136.7, "context_k": 1024, "modality": "text+image+file+audio+video->text", "prompt_price_per_m": 2.0, "completion_price_per_m": 12.0},
+    {"id": "moonshotai/kimi-k2.7-code", "coding_index": 60.8, "intelligence_index": 41.9, "agentic_index": 29.6, "code_elo": 1306, "total_score": 132.3, "context_k": 256, "modality": "text+image->text", "prompt_price_per_m": 0.74, "completion_price_per_m": 3.5},
+    {"id": "xiaomi/mimo-v2.5-pro", "coding_index": 60.2, "intelligence_index": 42.2, "agentic_index": 29.1, "code_elo": 1319, "total_score": 131.5, "context_k": 1024, "modality": "text->text", "prompt_price_per_m": 0.43, "completion_price_per_m": 0.87}
+  ],
+  "free_models": [
+    {"id": "nvidia/nemotron-3-ultra-550b-a55b:free", "coding_index": 49.3, "intelligence_index": 37.8, "code_elo": 1175, "context_k": 976, "modality": "text->text", "prompt_price_per_m": 0, "completion_price_per_m": 0},
+    {"id": "google/gemma-4-31b-it:free", "coding_index": 43.4, "intelligence_index": 29.4, "code_elo": 0, "context_k": 256, "modality": "text+image+video->text", "prompt_price_per_m": 0, "completion_price_per_m": 0},
+    {"id": "google/gemma-4-26b-a4b-it:free", "coding_index": 39.3, "intelligence_index": 25.7, "code_elo": 0, "context_k": 256, "modality": "text+image+video->text", "prompt_price_per_m": 0, "completion_price_per_m": 0},
+    {"id": "nvidia/nemotron-3-super-120b-a12b:free", "coding_index": 37.7, "intelligence_index": 25.4, "code_elo": 0, "context_k": 976, "modality": "text->text", "prompt_price_per_m": 0, "completion_price_per_m": 0},
+    {"id": "openai/gpt-oss-120b:free", "coding_index": 30.4, "intelligence_index": 23.8, "code_elo": 1012, "context_k": 128, "modality": "text->text", "prompt_price_per_m": 0, "completion_price_per_m": 0},
+    {"id": "qwen/qwen3-coder:free", "coding_index": 0, "intelligence_index": 0, "code_elo": 1192, "context_k": 1024, "modality": "text->text", "prompt_price_per_m": 0, "completion_price_per_m": 0}
+  ],
+  "total_models_indexed": 15
+}

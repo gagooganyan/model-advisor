@@ -1,0 +1,20 @@
+name: Bug Report
+description: Сообщить об ошибке
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: Опиши ошибку
+      placeholder: Что пошло не так?
+  - type: textarea
+    attributes:
+      label: Как воспроизвести
+      placeholder: Шаги для повторения
+  - type: input
+    attributes:
+      label: Платформа
+      placeholder: Claude Code / OpenCode / Cursor / etc.
+  - type: textarea
+    attributes:
+      label: Ожидаемое поведение
+      placeholder: Что должно было произойти?

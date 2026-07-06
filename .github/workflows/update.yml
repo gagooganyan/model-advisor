@@ -1,0 +1,62 @@
+name: Update Models Weekly
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # Every Monday midnight UTC
+  workflow_dispatch:       # Manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Fetch latest model data
+        id: fetch
+        run: |
+          OUTPUT=$(python data/update.py)
+          echo "$OUTPUT"
+          echo 'summary<<EOF' >> $GITHUB_OUTPUT
+          echo "$OUTPUT" >> $GITHUB_OUTPUT
+          echo 'EOF' >> $GITHUB_OUTPUT
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --exit-code data/models.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Update SKILL.md with new data
+        if: steps.diff.outputs.changed == 'true'
+        run: python data/generate_skill.py
+      
+      - name: Create Pull Request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: 'chore: update model benchmarks and pricing'
+          title: '📊 Auto-update: model benchmarks & pricing'
+          body: |
+            ## 📊 Автообновление бенчмарков и цен
+            
+            Данные из OpenRouter API (Artificial Analysis + Design Arena).
+            
+            ```
+            ${{ steps.fetch.outputs.summary }}
+            ```
+            
+            Пожалуйста, проверь изменения перед мерджем.
+          branch: auto/update-models
+          delete-branch: true
